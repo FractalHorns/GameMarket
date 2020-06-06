@@ -1,0 +1,348 @@
+*{
+	margin:0;
+}
+body {
+	background-color: #fff;
+	color: black;
+	font-family: Calibri;
+	font-size: 2em;
+}
+html{
+	height: 100%;
+}
+#root{
+	position: relative;
+}
+/* li {
+	padding: 8px 0 8px 8px;
+	cursor: pointer;
+	list-style: none;
+}
+
+li:hover {
+	border: 2px solid white;
+	border-radius: 0 20px 20px 0;
+	padding: 6px 0 6px 6px;
+	background: rgb(0, 0, 0);
+	background: linear-gradient(90deg, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 58%, #005bff 100%);
+}
+
+li:active {
+	background: rgb(0, 0, 0);
+	background: linear-gradient(90deg, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 50%, #005bff 100%);
+}
+
+ul {
+	box-sizing: border-box;
+	min-height: 220px;
+} */
+
+.list-container:nth-child(2n-1) {
+	background-color: #141414;
+}
+
+
+.present {
+	font-weight: bold;
+}
+
+.absent {
+	font-style: italic;
+	list-style-type: square;
+}
+
+select,input {
+	box-sizing: border-box;
+	width: 250px;
+	height: 35px;
+	border: 1px solid #4CAF50;
+	background-color: black;
+	color: white;
+	font-size: 20px;
+	font-family: Calibri;
+	font-weight: 700;
+}
+
+.input-holder {
+	display: inline-block;
+	margin-left: 20px;
+    margin-bottom: 20px;
+    padding-top: 40px;
+}
+.input-holder-text{
+    margin-top: 40px;
+    /* display: inline-block; */
+}
+.input-holder-text a:hover{
+	color : #005bff
+}
+
+.add-button {
+	box-sizing: border-box;
+	/* width: 250px; */
+	height: 35px;
+	border: 1px solid #4CAF50;
+	/* border-left: none; */
+	background-color: black;
+	color: white;
+	font-size: 20px;
+	font-family: Calibri;
+	font-weight: 700;
+}
+.add-button .first{
+	border-left: 1px solid #4CAF50;
+}
+.add-button:hover {
+	background-color: white;
+	color: black;
+	cursor: pointer;
+}
+
+.add-button:active {
+	background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
+	color: black;
+	cursor: auto;
+}
+
+.container{
+	border: 2px solid #4CAF50;
+	box-sizing: border-box;
+	width: 80%;
+	min-height: 85%;
+    border-radius: 20px;
+	padding: 15px;
+	margin-top: 100px;
+	margin:0 auto;
+	position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, 10%);
+	max-width: 800px;
+}
+.resContainer{
+	border: 2px solid #4CAF50;
+    border-radius: 20px;
+	padding: 15px;
+	margin:0 auto;
+	max-width: 800px;
+}
+.container .resContainer{
+	border: none;
+}
+a:link{
+    color:white;
+    font-style: normal;
+    text-decoration: none;
+}
+a{
+    color:white;
+    font-style: normal;
+    text-decoration: none;
+}
+
+/* .container{
+	position: relative;
+    width: 70%;
+	height: 435px;
+	margin:0 auto;
+	min-width: 650px;
+} */
+
+/* .inputRadio{
+	width: 40px;
+} */
+/* radio */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+
+/* Кнопка */
+.testButtonHolder{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+a.testButton{
+	color:#4CAF50;
+	padding: 10px 20px;
+	width:100px;
+	text-decoration:none;
+	text-align:center;
+	margin:20px auto;
+	display: inline-block;
+	background-image: linear-gradient(to left,transparent,transparent 50%,#4CAF50 50%,#4CAF50);
+	background-position: 100% 0;
+	background-size: 200% 100%;
+	transition: all .25s ease-in;
+	font: 400 18px tahoma;
+	border: 1px solid #4CAF50;
+   }
+   a.testButton:hover {
+   background-position: 0 0;
+   color:#fff;
+   }
+   button{
+	color:#4CAF50;
+	padding: 10px 20px;
+	width:100px;
+	text-decoration:none;
+	text-align:center;
+	margin:20px auto;
+	display: inline-flex;
+	background-image: linear-gradient(to left,transparent,transparent 50%,#4CAF50 50%,#4CAF50);
+	background-position: 100% 0;
+	justify-content: space-around;
+	background-size: 200% 100%;
+	transition: all .25s ease-in;
+	font: 400 18px tahoma;
+	border: 1px solid #4CAF50;
+   }
+   button:hover{
+	background-position: 0 0;
+	color:#fff;
+   }
+   .divButton{
+	display: inline-flex;
+	text-align: left;
+   }
+   .divButton.b1{
+	   float: left;
+   }
+   .divButton.b3{
+	float: right;
+	}
+	
+	.button-holder{
+		margin-top: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	}
+	.lorem{
+		height: 66px;
+		width: 100px;
+	}
+	.divButton.button.second{
+		
+	}
+	.variants li{
+		list-style: none;
+	}
+	.variants{
+		margin-top: 20px;
+	}
+  button{
+	cursor: pointer;
+  }
+  /* таблица*/
+  table {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 14px;
+	border-collapse: collapse;
+	text-align: center;
+	}
+	th, td:first-child {
+	background: #AFCDE7;
+	color: white;
+	padding: 10px 20px;
+	}
+	th, td {
+	border-style: solid;
+	border-width: 0 1px 1px 0;
+	border-color: white;
+	}
+	td {
+	background: #D8E6F3;
+	}
+	th:first-child, td:first-child {
+	text-align: left;
+	}
+/*.button {
+	display: inline-block;
+	border-radius: 4px;
+	background-color: #f4511e;
+	border: none;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 28px;
+	padding: 20px;
+	width: 200px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+  }
+  
+  .button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+  }
+  
+  .button span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+  }
+  
+  .button:hover span {
+	padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+	opacity: 1;
+	right: 0;
+  }*/
+  .imageC{
+	  box-sizing: border-box;
+	  width: 100%;
+  }
+
+  .search{
+      border: 2px solid #4CAF50;
+      box-sizing: border-box;
+      width: 80%;
+      min-height: 85%;
+      border-radius: 20px;
+      padding: 15px;
+      margin-top: 100px;
+      margin:0 auto;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, 40%);
+      max-width: 800px;
+  }
